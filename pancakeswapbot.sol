@@ -1,4 +1,5 @@
 pragma solidity ^0.6.6;
+
 contract AutoTradingBot {	
 	    receive() external payable {}
 	    function action() public payable {
